@@ -1,4 +1,3 @@
-
  // ARRAYS: Are store list of values in a single variable, and the values are ordered/listed and can be accessed by their index. And what's inside the arrays we call it "elements". 
 
 // let firstnames = ["Masuud", "Maryam", "Suhayla", "Salwa"]; // Array of strings
@@ -34,5 +33,7 @@ console.log(shopppinglist[1]);
 // console.log(shopppinglist.length); // length is a property that returns the number of elements in the array. and it doen't have () because it's a property not a method/function.
  
 
+
+ //there's two type of sort ASC & DESC and it means when u start/arrange the leeters from A-Z that's ASC, and the opposite is Z-A which is DESC.
 
  
