@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events</title>
+</head>
+<body>
+
+    <h1>JavaScript Events Example</h1>
+
+    <!-- CLICK EVENT -->
+    <button id="btn">Click Me</button>
+    <br><br>
+
+    <!-- INPUT EVENT -->
+    <input type="text" id="inputBox" placeholder="Type here">
+    <br><br>
+
+    <!-- KEYUP EVENT -->
+    <input type="text" id="keyBox" placeholder="Press keyboard keys">
+    <br><br>
+
+    <!-- FOCUS EVENT -->
+    <input type="text" id="focusBox" placeholder="Click inside">
+    <br><br>
+
+    <!-- BLUR EVENT -->
+    <input type="text" id="blurBox" placeholder="Click then leave">
+    <br><br>
+
+    <!-- CHANGE EVENT -->
+    <select id="country">
+        <option>Select Country</option>
+        <option>Saudi Arabia</option>
+        <option>UK</option>
+        <option>USA</option>
+    </select>
+
+    <br><br>
+
+    <!-- MOUSEOVER + MOUSEOUT -->
+    <div id="box">
+        Put mouse here
+    </div>
+
+    <br>
+
+    <!-- SUBMIT EVENT -->
+    <form id="myForm">
+        <input type="text" placeholder="Enter Name">
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <script>
+
+        // ====================
+        // CLICK EVENT
+        // ====================
+        document.getElementById("btn")
+        .addEventListener("click", function () {
+
+            console.log("Button clicked");
+
+        });
+
+
+
+        // ====================
+        // INPUT EVENT
+        // ====================
+        document.getElementById("inputBox")
+        .addEventListener("input", function () {
+
+            console.log("Typing:",
+            this.value);
+
+        });
+
+
+
+        // ====================
+        // KEYUP EVENT
+        // ====================
+        document.getElementById("keyBox")
+        .addEventListener("keyup",
+        function (event) {
+
+            console.log("Key pressed:",
+            event.key);
+
+        });
+
+
+
+        // ====================
+        // FOCUS EVENT
+        // ====================
+        document.getElementById("focusBox")
+        .addEventListener("focus",
+        function () {
+
+            console.log("Input focused");
+
+        });
+
+
+
+        // ====================
+        // BLUR EVENT
+        // ====================
+        document.getElementById("blurBox")
+        .addEventListener("blur",
+        function () {
+
+            console.log("You left input");
+
+        });
+
+
+
+        // ====================
+        // CHANGE EVENT
+        // ====================
+        document.getElementById("country")
+        .addEventListener("change",
+        function () {
+
+            console.log("Selected:",
+            this.value);
+
+        });
+
+
+
+        // ====================
+        // MOUSEOVER EVENT
+        // ====================
+        document.getElementById("box")
+        .addEventListener("mouseover",
+        function () {
+
+            console.log("Mouse over box");
+
+        });
+
+
+
+        // ====================
+        // MOUSEOUT EVENT
+        // ====================
+        document.getElementById("box")
+        .addEventListener("mouseout",
+        function () {
+
+            console.log("Mouse left box");
+
+        });
+
+
+
+        // ====================
+        // SUBMIT EVENT
+        // ====================
+        document.getElementById("myForm")
+        .addEventListener("submit",
+        function (event) {
+
+            event.preventDefault();
+
+            console.log("Form submitted");
+
+        });
+
+    </script>
+
+</body>
+</html>
